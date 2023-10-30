@@ -1,9 +1,15 @@
 {
   "name": "hook",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "builds": [
+    {
+      "src": "main.js",
+      "use": "@vercel/node"
+    }
+  ]
 }
